@@ -83,6 +83,22 @@ body {
     border: none;
 
 }
+/* SEGUNDA TELA - RESPOSTA COM DADOS DO IMC */
+
+/* Aparti daqui é a segunda tela !*/
+
+
+.container2 {
+    display: flex;
+    justify-content: center;
+}
+.teste-body h1 {
+    color: white;
+    border: 1px solid red;
+    padding: 15px;
+    width: 300px;
+    
+}
 
 
 
