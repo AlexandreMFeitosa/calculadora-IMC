@@ -91,7 +91,10 @@ body {
 .container2 {
     display: flex;
     justify-content: center;
+    
+    
 }
+
 .teste-body h1 {
     color: white;
     border: 1px solid red;
@@ -99,6 +102,12 @@ body {
     width: 300px;
     
 }
+
+span {
+    color: white;
+    
+}
+
 
 
 
