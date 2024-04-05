@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Resultado do IMC</title>
+</head>
+<body>
+    <div class="container2">
+        <div class="teste-body">
+            <h1>O resultado é <span id="resultado"></span></h1>
+            <button><a href="imc.html">Voltar</a></button>
+        </div>
+    </div>
+
+    <script>
+        // Função para obter o parâmetro da URL
+        function obterParametroURL(nome) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(nome);
+        }
+
+        // Obtendo o resultado do IMC da URL e inserindo no HTML
+        const resultadoIMC = obterParametroURL('resultadoIMC');
+        document.getElementById('resultado').textContent = resultadoIMC;
+
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Resposta IMC</title>
+</head>
+<body>
+    <div class="container2">
+        <div class="teste-body">
+            <h1>Resultado é : <span id="resultadoIMC"></span></h1>
+            
+            <button><a href="imc.html">Voltar</a></button>
+        </div>
+    </div>
+
+     Script da pagina , que vai pagar os dados da Page Principal 
+
+    <script>
+        function obterParametroURL (nome) {
+            const urlParams = new URLSearchParams(window.location.search);
+
+            return urlParams.get(nome);
+        }
+
+        const resultadoIMC = obterParametroURL('resultado');
+
+        document.getElementById('resultadoIMC').innerText = resultadoIMC ;
+    </script>
+
+</body>
+</html> -->
