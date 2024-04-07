@@ -24,6 +24,7 @@ btnCalcular.addEventListener("click" , () => {
 
         let resultadoIMC = valorPeso / (valorAltura * valorAltura) ;
 
+        
         /* SEGUNDA TELA - RESPOSTA COM DADOS DO IMC */
         
         window.location.href = `resposta.html?resultadoIMC=${resultadoIMC.toFixed(2)}`;
