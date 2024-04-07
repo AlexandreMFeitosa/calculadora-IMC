@@ -108,6 +108,22 @@ span {
     
 }
 
+.tabela-imc p {
+    font-size: 15px;
+    color: red;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.tabela-imc nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    
+}
+
+
+
 
 
 
