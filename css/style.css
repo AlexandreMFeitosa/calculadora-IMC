@@ -95,11 +95,20 @@ body {
     
 }
 
-.teste-body h1 {
+.teste-body {
     color: white;
-    border: 1px solid red;
+    border: 1px solid rgb(0, 217, 255);
     padding: 15px;
-    width: 300px;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.teste-body span {
+    
     
 }
 
@@ -108,24 +117,52 @@ span {
     
 }
 
-.tabela-imc p {
+.tabela-imc  {
     font-size: 15px;
-    color: red;
-    padding-top: 15px;
-    padding-bottom: 5px;
+    color: rgb(252, 248, 248);
 }
 
 .tabela-imc nav {
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    
     
 }
 
+.menosde18 {
+    color: rgb(223, 9, 9);
+    display: inline;
 
+   
+    
+}
 
+.entre18e24 p {
+    color: rgb(5, 187, 35);
+    
+    
+}
 
+.btn-voltar button {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 250px;
+    cursor: pointer;
+    align-items: center;
+    font-size: 25px;
+    margin-top: 60px;
+    margin-left: 125px;
+    background-color: red;
+    border-radius: 5px;
+    
+}
 
+.btn-voltar button a {
+    text-decoration: none;
+    color: white;
 
-
-
+}
