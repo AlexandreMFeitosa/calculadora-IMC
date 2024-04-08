@@ -9,10 +9,7 @@
 <body>
     <div class="container2">
         <div class="teste-body">
-            <h1>Seu IMC é : <span id="resultado"></span></h1>
-            <div class="btn-voltar">
-                <button><a href="imc.html">Voltar</a></button>
-            </div>
+            <h1><span id="resultado"></span></h1>
         </div>
         
     </div>
@@ -29,10 +26,10 @@
 
         // Teste para caso o valor do IMC seja abaixo  de 18
         if (resultadoIMC <= 18) {
-            document.getElementById('resultado').innerHTML = `${resultadoIMC} <br> e <br> está abaixo <br> do normal ! <br>
+            document.getElementById('resultado').innerHTML = ` Seu IMC é ${resultadoIMC} e está abaixo do normal !
 
-            <div class="tabela-imc">
-                <form >
+            <div>
+                <form class="tabela-imc" >
                     <nav>
                         <p> IMC </p> 
                         <p> Classificação </p>
@@ -40,7 +37,7 @@
                     </nav>
                     <hr>
                     <nav>
-                        <p>Menos de 18,5</p>
+                        <p> - 18,5</p>
                         <p>Abaixo</p>
                         <p>0</p>
                     </nav>
@@ -52,21 +49,22 @@
                     </nav>
                     <hr>
                     <nav>
-                        <p>25 a 29,9</p>
+                        <p>25,0 a 29,9</p>
                         <p>Sobrepeso</p>
                         <p>I</p>
                     </nav>
                     <hr>
                     <nav>
-                        <p>30 a 39,9</p>
+                        <p>30,0 a 39,9</p>
                         <p>Obeso</p>
                         <p>II</p>
                     </nav>
-
                 </form>
+                <div class="btn-voltar">
+                    <button><a href="imc.html">Voltar</a></button>
+                </div>
             </div>
 
-            
             `;
         } else {
             document.getElementById('resultado').textContent = `${resultadoIMC} está normal !`;
