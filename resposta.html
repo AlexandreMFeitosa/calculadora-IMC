@@ -26,12 +26,12 @@
 
         // Teste para caso o valor do IMC seja abaixo  de 18
         if (resultadoIMC <= 18) {
-            document.getElementById('resultado').innerHTML = ` Seu IMC é ${resultadoIMC} e está abaixo do normal !
 
+            document.getElementById('resultado').innerHTML = ` Seu IMC é ${resultadoIMC} e está abaixo do normal ! <br><br>
             <div>
                 <form class="tabela-imc" >
-                    <nav>
-                        <p> IMC </p> 
+                    <nav class="tabela-title">
+                        <p class="p-IMC"> IMC </p> 
                         <p> Classificação </p>
                         <p> Obesidade </p>
                     </nav>
@@ -66,14 +66,148 @@
             </div>
 
             `;
-        } else {
-            document.getElementById('resultado').textContent = `${resultadoIMC} está normal !`;
 
+            document.getElementById('resultado').style.color = "red";
+
+        } else if ( resultadoIMC > 18,5 && resultadoIMC < 25 ) {
+
+            document.getElementById('resultado').innerHTML = ` Seu IMC é ${resultadoIMC} e está normal, saudável ! <br><br>
+            <div>
+                <form class="tabela-imc" >
+                    <nav class="tabela-title">
+                        <p class="p-IMC"> IMC </p> 
+                        <p> Classificação </p>
+                        <p> Obesidade </p>
+                    </nav>
+                    <hr>
+                    <nav>
+                        <p> - 18,5</p>
+                        <p>Abaixo</p>
+                        <p>0</p>
+                    </nav>
+                    <hr>
+                    <nav>
+                        <p>18,5 a 24,9</p>
+                        <p>Saudável</p>
+                        <p>0</p>
+                    </nav>
+                    <hr>
+                    <nav>
+                        <p>25,0 a 29,9</p>
+                        <p>Sobrepeso</p>
+                        <p>I</p>
+                    </nav>
+                    <hr>
+                    <nav>
+                        <p>30,0 a 39,9</p>
+                        <p>Obeso</p>
+                        <p>II</p>
+                    </nav>
+                </form>
+                <div class="btn-voltar">
+                    <button><a href="imc.html">Voltar</a></button>
+                </div>
+            </div>
+
+            `;
+
+
+            document.getElementById('resultado').style.color = "green";
+
+            
+
+        } else if (resultadoIMC > 25 && resultadoIMC < 30) {
+
+            document.getElementById('resultado').innerHTML = ` Seu IMC é ${resultadoIMC} acima do normal, Sobrepeso ! <br><br>
+            <div>
+                <form class="tabela-imc" >
+                    <nav class="tabela-title">
+                        <p class="p-IMC"> IMC </p> 
+                        <p> Classificação </p>
+                        <p> Obesidade </p>
+                    </nav>
+                    <hr>
+                    <nav>
+                        <p> - 18,5</p>
+                        <p>Abaixo</p>
+                        <p>0</p>
+                    </nav>
+                    <hr>
+                    <nav>
+                        <p>18,5 a 24,9</p>
+                        <p>Saudável</p>
+                        <p>0</p>
+                    </nav>
+                    <hr>
+                    <nav>
+                        <p>25,0 a 29,9</p>
+                        <p>Sobrepeso</p>
+                        <p>I</p>
+                    </nav>
+                    <hr>
+                    <nav>
+                        <p>30,0 a 39,9</p>
+                        <p>Obeso</p>
+                        <p>II</p>
+                    </nav>
+                </form>
+                <div class="btn-voltar">
+                    <button><a href="imc.html">Voltar</a></button>
+                </div>
+            </div>
+
+            `;
+
+            document.getElementById('resultado').style.color = "gold";
+
+        } else {
+
+            document.getElementById('resultado').innerHTML = ` Seu IMC é ${resultadoIMC} , muito acima do normal, Obesidade ! <br><br>
+            <div>
+                <form class="tabela-imc" >
+                    <nav class="tabela-title">
+                        <p class="p-IMC"> IMC </p> 
+                        <p> Classificação </p>
+                        <p> Obesidade </p>
+                    </nav>
+                    <hr>
+                    <nav>
+                        <p> - 18,5</p>
+                        <p>Abaixo</p>
+                        <p>0</p>
+                    </nav>
+                    <hr>
+                    <nav>
+                        <p>18,5 a 24,9</p>
+                        <p>Saudável</p>
+                        <p>0</p>
+                    </nav>
+                    <hr>
+                    <nav>
+                        <p>25,0 a 29,9</p>
+                        <p>Sobrepeso</p>
+                        <p>I</p>
+                    </nav>
+                    <hr>
+                    <nav>
+                        <p>30,0 a 39,9</p>
+                        <p>Obeso</p>
+                        <p>II</p>
+                    </nav>
+                </form>
+                <div class="btn-voltar">
+                    <button><a href="imc.html">Voltar</a></button>
+                </div>
+            </div>
+
+            `;
+
+            document.getElementById('resultado').style.color = "purple";
+
+    
         }
 
         //  document.getElementById('resultado').textContent = `${resultadoIMC} de IMC !`;
-
-        
         
     </script>
 </body>
