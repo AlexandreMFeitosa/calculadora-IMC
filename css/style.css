@@ -107,11 +107,6 @@ body {
     transform: translate(-50%,-50%);
 }
 
-.teste-body span {
-    
-    
-}
-
 span {
     color: white;
     
@@ -124,25 +119,10 @@ span {
 
 .tabela-imc nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 10px;
     padding-bottom: 10px;
-    
-    
-    
-}
-
-.menosde18 {
-    color: rgb(223, 9, 9);
-    display: inline;
-
-   
-    
-}
-
-.entre18e24 p {
-    color: rgb(5, 187, 35);
-    
+    padding-right: 55px;
     
 }
 
@@ -164,5 +144,5 @@ span {
 .btn-voltar button a {
     text-decoration: none;
     color: white;
-
+    
 }
